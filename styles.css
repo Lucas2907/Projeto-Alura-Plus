@@ -69,6 +69,7 @@ body {
 
 .secundario__imagem {
     width: 80%;
+    transition: width 0.5s;
 }
 
 .secundario {
@@ -119,7 +120,7 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 3em 3em;
+    margin: 5em 3em;
 }
 
 .rodape__lista { 
@@ -148,6 +149,14 @@ body {
 .lista__link a:active {
     color:purple;
 }
+
+.container__botao:hover {
+    background-color: #679fdc;
+}
+
+.secundario__imagem:hover {
+    width: 100%;
+  }
 
 @media screen and (max-width: 768px) {
     .container {
@@ -185,3 +194,5 @@ body {
         display: block;
     }
 }
+
+  
