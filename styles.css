@@ -131,26 +131,26 @@ body {
 
 .lista__link a {
   text-decoration: none;
-  color: var(--branco-principal);
+  color: red;
   margin-left: 1em;
 }
 
 .rodape__texto {
   margin: 1em 0;
-  color: var(--cinza-secundario);
+  color: white;
   font-size: 14px;
 }
 
 .lista__link a:hover {
-  color: var(--botao-azul);
+  color: red;
 }
 
 .lista__link a:active {
-  color: purple;
+  color: rgb(201, 46, 46);
 }
 
 .container__botao:hover {
-  background-color: #f06457;
+  background-color: #e4f30b;
 }
 
 .secundario__imagem:hover {
