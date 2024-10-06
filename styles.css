@@ -1,195 +1,198 @@
 :root {
-  --branco-principal: #ffffff;
-  --cinza-secundario: #c0c0c0;
-  --botao-azul: #167bf7;
-  --cor-de-fundo: #00030c;
-  --fonte-principal: "Inter";
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
 }
 
 body {
-  background-color: var(--cor-de-fundo);
-  color: var(--branco-principal);
-  font-family: var(--fonte-principal);
-  font-size: 16px;
-  font-weight: 400;
-  list-style: none;
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    list-style: none;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .principal {
-  background-image: url("assets/Background.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  align-items: center;
-  text-align: center;
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
 .container {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 50% 50%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .container__botao {
-  background-color: red;
-  border-radius: 5px;
-  padding: 1em;
-  color: var(--branco-principal);
-  display: block;
-  text-decoration: none;
-  margin-bottom: 1em;
+    background-color: red;
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
 }
 
 .botao_secundario {
-  background-color: transparent;
-  border: 2px solid var(--branco-principal);
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
 }
 
 .container__aviso {
-  font-size: 12px;
-  color: var(--cinza-secundario);
+    font-size: 12px;
+    color: var(--cinza-secundario);
 }
 
 .container__titulo {
-  font-size: 28px;
-  font-weight: 700;
+    font-size: 28px;
+    font-weight: 700;
 }
 
 .container__imagem {
-  margin: 1em 0 2em 0;
+    margin: 1em 0 2em 0;
 }
 
 .container__caixa {
-  margin: 0 6em;
+    margin: 0 6em;
 }
 
 .secundario__imagem {
-  width: 80%;
-  transition: width 0.5s;
+    width: 80%;
+    transition: width 0.5s;
 }
 
 .secundario {
-  align-items: center;
-  margin: 0 10em;
+    align-items: center;
+    margin: 0 10em;
 }
 
 .descricao__titulo {
-  font-weight: 700;
-  font-size: 48px;
-  color: var(--branco-principal);
-  margin-bottom: 0.1em;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
 }
 
 .descricao__texto {
-  color: var(--cinza-secundario);
+    color: var(--cinza-secundario);
 }
 
 .secundario__botao {
-  display: inline-block;
-  margin-top: 1em;
+    display: inline-block;
+    margin-top: 1em;
 }
 
 .container__descricao {
-  padding: 2em;
+    padding: 2em;
 }
 
 .listas {
-  display: flex;
-  justify-content: center;
-  margin: 5em 0;
+    display: flex;
+    justify-content: center;
+    margin: 5em 0;
+    
 }
 
 .listas__lista__textos {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .titulo {
-  display: flex;
-  justify-content: center;
-  margin: 0.5em 0;
+    display: flex;
+    justify-content: center;
+    margin: 0.5em 0;
 }
 
 .rodape {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  margin: 5em 3em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5em 3em;
 }
 
-.rodape__lista {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  margin-top: 1em;
+.rodape__lista { 
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin-top: 1em;
 }
 
 .lista__link a {
-  text-decoration: none;
-  color: var(--branco-principal);
-  margin-left: 1em;
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
 }
 
 .rodape__texto {
-  margin: 1em 0;
-  color: var(--cinza-secundario);
-  font-size: 14px;
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
 }
 
 .lista__link a:hover {
-  color: var(--botao-azul);
+    color: var(--botao-azul);
 }
 
 .lista__link a:active {
-  color: purple;
+    color:purple;
 }
 
 .container__botao:hover {
-  background-color: #f06457;
+    background-color: rgb(234, 65, 65);
 }
 
 .secundario__imagem:hover {
-  width: 100%;
-}
+    width: 100%;
+  }
 
 @media screen and (max-width: 768px) {
-  .container {
-    display: block;
-    background-image: none;
-  }
+    .container {
+        display: block;
+        background-image: none;
+    }
 
-  .container__imagem {
-    width: 50vw;
-  }
+    .container__imagem {
+        width: 50vw;
+    }
 
-  .container__caixa {
-    margin: 2em 2em;
-  }
+    .container__caixa {
+        margin: 2em 2em;
+    }
 
-  .secundario {
-    margin: 0;
-    text-align: center;
-  }
+    .secundario {
+        margin:0;
+        text-align: center;
+    }
 
-  .secundario__imagem {
-    width: 50vw;
-  }
+    .secundario__imagem {
+        width: 50vw;
+    }
 
-  .titulo {
-    text-align: center;
-  }
+    .titulo{
+        text-align: center;
+    }
 
-  .listas {
-    display: block;
-    text-align: center;
-  }
+    .listas{
+        display: block;
+        text-align: center;
+    }
 
-  .rodape__lista {
-    display: block;
-  }
+    .rodape__lista {
+        display: block;
+    }
 }
+
+  
